@@ -9,6 +9,7 @@ import HistoryScreen from '../View/HistoryScreen';
 import SeriesScreen from '../View/SeriesScreen';
 import LiveTvScreen from '../View/LiveTvScreen';
 import Search from '../View/Search';
+import VideoPlayerScreen from '../View/VideoPlayer';
 
 const Stack = createNativeStackNavigator();
 
@@ -66,6 +67,11 @@ function Navigation() {
         <Stack.Screen
           name="Search"
           component={Search}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Video"
+          component={VideoPlayerScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
